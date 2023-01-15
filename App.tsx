@@ -1,15 +1,14 @@
-import { SafeAreaView } from "react-native";
 import { TailwindProvider } from "tailwind-rn";
-
-import Hello from "@components/Hello";
 import utilities from "./tailwind.json";
+import RouterComp from "@/common/RouterComp";
+import { NativeRouter } from "react-router-native";
 
 export default function App() {
   return (
     <TailwindProvider utilities={utilities}>
-      <SafeAreaView>
-        <Hello />
-      </SafeAreaView>
+      <NativeRouter>
+        <RouterComp />
+      </NativeRouter>
     </TailwindProvider>
   );
 }
