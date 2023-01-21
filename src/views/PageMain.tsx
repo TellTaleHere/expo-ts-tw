@@ -8,7 +8,7 @@ const PageMain = () => {
     <View style={tw("p-2 rounded bg-blue-400")}>
       <Text style={tw("font-bold")}>
         Hello Main sfsdfsd fsdf sd fs df sdfs dfsdfsdfsdfs dfsdf sdfsdfsdfsdfsdf
-        sdfsdfsdfsdf sdfsdfsdf sdfsdfsdf{" "}
+        sdfsdfsdfsdf sdfsdfsdf sd sdfsdfsdfsdfsd sdfsdfsdf sdffsdfsdf{" "}
       </Text>
     </View>
   );

@@ -16,7 +16,6 @@ export interface ViewInterface {
 }
 
 const ViewSafe = ({
-  style,
   children,
   shouldDismissKeyboard = true,
 }: ViewInterface): JSX.Element => {
@@ -25,8 +24,7 @@ const ViewSafe = ({
   return (
     <SafeAreaView
       style={[
-        tw("flex-1"),
-        style,
+        tw("h-full"),
         { paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0 },
       ]}
       onStartShouldSetResponderCapture={({ target }: any) => {
